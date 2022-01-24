@@ -1,0 +1,33 @@
+<!DOCUMENT HTML>
+<html>
+<head>
+<title>first name</title>
+function validate()
+{
+var res=document.getElementById("fname").value
+if(res.length==0)
+{
+document.getElementById("msg").innerHTML=
+"first name should not be empty"
+return false
+}
+else if(res.length<3)
+{
+document.getElementById("msg").innerHTML=
+"first name should not be less than 3"
+return false
+}
+else if(res.length>15)
+{
+document.getElementById("msg").innerHTML=
+"first name should not be more than 15"
+return false
+</head>
+<body>
+<form onsubmit="return validate()" action="https://www.google.com">
+First name:<input type="text" id="ph">
+<input type="submit" value="SUBMIT")/>
+</form>
+
+</body>
+</html> 
